@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mariam Gasparian">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vanilla To Do App</title>
+</head>
+<body>
+    <main class="container">
+        <nav class="navigation">
+          <ul class="navigation-items">
+            <li class="navigation-item">T O D O</li>
+          </ul>
+        </nav>
+        <form class="todo-form">
+          <div class="input-container">
+            <input
+              type="text"
+              id="add-input-field"
+              class="input"
+              placeholder="Please add new task..."
+            />
+            <label for="add-input-field" id="input-field"></label>
+            <input type="submit" id="add-task-button" class="add-button" value="Add" onclick="addTodo(event)" /> 
+        </div>
+        </form>
+        <ul class="todo-collection-tasks"></ul>
+        <div id="pagination"></div>
+      </main>
+      <script src="./app.js"></script>
+    </body>
+  </html>  
+</body>
+</html>
